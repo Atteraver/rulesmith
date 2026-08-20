@@ -14,6 +14,12 @@ If done manually, this is a multi-step investigation across different data sourc
 
 ---
 
+## Demo
+
+[Watch the 5-minute demo](https://sap-my.sharepoint.com/:v:/p/ahad_abbas_rizvi/IQD1HrH5U_rgSb9ga9K4JZbNAUW_lsmCOSAakXfSIryObYY?e=5l1MV4)
+
+---
+
 ## What it does
 
 The framework gives you a **free ReAct loop**: the LLM decides which tools to call, how many times, and in what order. You define tools with a decorator, hand them to an `Agent`, and call `agent.run(goal)`.
