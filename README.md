@@ -46,7 +46,7 @@ python3 -m venv .venv
 source .venv/bin/activate
 pip install -r requirements.txt
 
-export HAI_BASE_URL=https://<your-hai-proxy-host>/v1
+export HAI_BASE_URL=http://localhost:6655/litellm/v1
 export HAI_API_KEY=<your-key>
 export HAI_MODEL=claude-sonnet-4-6   # optional, this is the default
 ```
