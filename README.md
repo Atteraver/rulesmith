@@ -16,7 +16,7 @@ If done manually, this is a multi-step investigation across different data sourc
 
 ## Demo
 
-[Watch the 5-minute demo](https://sap-my.sharepoint.com/:v:/p/ahad_abbas_rizvi/IQD1HrH5U_rgSb9ga9K4JZbNAUW_lsmCOSAakXfSIryObYY?e=5l1MV4)
+[Watch the 5-minute demo](https://sap-my.sharepoint.com/:v:/p/ahad_abbas_rizvi/IQCYaZ7F7j2ES6L49rC8baS6AdALNKT5Q85jFHibmo0YPjg?e=9SMrVC)
 
 ---
 
@@ -41,7 +41,9 @@ The framework gives you a **free ReAct loop**: the LLM decides which tools to ca
 ## Setup
 
 ```bash
-cd agent-framework
+cd rulesmith
+python3 -m venv .venv
+source .venv/bin/activate
 pip install -r requirements.txt
 
 export HAI_BASE_URL=https://<your-hai-proxy-host>/v1
