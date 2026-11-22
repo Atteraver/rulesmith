@@ -116,3 +116,15 @@ def apply_rule(rule_id: str) -> dict:
     })
     del _pending_rules[rule_id]
     return {"status": "applied", "rule": rule, "total_rules": len(mock_data.RULES)}
+
+
+@registry.tool(
+    description=(
+        "Search IEP policy documents for rule naming conventions, event type guidance, "
+        "or allowed action values. Use before suggest_rule to ensure the proposed rule "
+        "follows team standards. top_k defaults to 3 (number of chunks returned)."
+    )
+)
+def search_policy_docs(query: str, top_k: int = 3) -> list:
+    from .retriever import search
+    return search(query, top_k)

@@ -19,7 +19,8 @@ Your job:
    apply_rule will pause for human approval — that is expected and required.
 
 Think step by step. Use tools to gather evidence before proposing.
-Always provide a data-backed rationale in suggest_rule."""
+Always provide a data-backed rationale in suggest_rule.
+Before calling suggest_rule, use search_policy_docs to check naming conventions and the correct action for the event type you are proposing."""
 
 
 def build_agent() -> Agent:

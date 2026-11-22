@@ -4,3 +4,4 @@ __pycache__/
 .idea/
 examples/rulesmith/reports/
 .env
+examples/rulesmith/policy_index/
